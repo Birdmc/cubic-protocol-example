@@ -8,7 +8,8 @@ edition = "2021"
 [dependencies]
 simple_logger = "2.1.0"
 log = "0.4.17"
-cubic-protocol = { path = "./../cubic-protocol", features = ["server", "p1_18_2"] }
+cubic-protocol = { path = "../cubic-protocol/cubic_protocol", features = ["all"]}
+cubic-protocol-server = { path = "../cubic-protocol/cubic_protocol_server"}
 cubic-chat = "0.1.1"
 uuid = "1.1.0"
 tokio = { version = "1.18.2", features = ["full"] }
